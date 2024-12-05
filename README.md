@@ -12,6 +12,12 @@ Here's the explanation:
 
 **Components and Roles**
 
+**Pre-requisites and Service and Port:**
+* Linux Operation System
+* Node Exporter-9100 (Deafult)
+* Grafana- 3000 (Deafult)
+* Prometheus-9090 (Deafult)
+
 **1. Monitoring Server:**
 
 * Acts as the central node for monitoring the networked servers.
