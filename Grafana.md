@@ -1,3 +1,4 @@
+### Granafa need to install and configure from only monitoring Server not the others monitored server
 **OS:** Ubuntu 22.04
 
 **Grafana Install and Configure step by step**
