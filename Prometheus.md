@@ -76,15 +76,34 @@ Open your favorite browser and search in url- http://your_VM_IP:9090 (you will g
 
 ![image](https://github.com/user-attachments/assets/c929ee4b-7f71-40a4-bb2b-eed8162b3578)
 
+## Installation done now need to Configuration:
 
+> Prometheus is configured using a prometheus.yml file, which defines how it scrapes metrics, configures alerting rules, and manages other settings. Here's an example of a basic scrapes metrics configuration.
 
+`sudo vim /usr/local/bin/prometheus/prometheus.yml`
 
+```
+# Global configuration
+global:
+  scrape_interval: 15s  # How often to scrape targets by default
+  evaluation_interval: 15s  # How often to evaluate rules by default
 
+# Scrape configurations
+scrape_configs:
+  # The job name is added as a label (`job=<job_name>`) to the metrics scraped
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost/"promethues Server IP":9090']  # Monitor the Prometheus server itself
 
+  # Example of scraping a node exporter
+  - job_name: 'node_exporter'
+    static_configs:
+      - targets: ['192.168.1.X:9100'] # Monitor the App,DB,Email server, where installed Node exporter.
+```
 
+> Prometheus configuration is done, You may change configuration as your requirements.
 
-
-
+**Now we will design our Grafana Dashboard, Check from Grafana.md file.**
 
 
 
