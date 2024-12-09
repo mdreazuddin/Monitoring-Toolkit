@@ -42,3 +42,31 @@
 Open your favorite browser and search in url- http://"your server IP":3000 **(default user and password is admin)** you will see an interface like below:
 
 ![image](https://github.com/user-attachments/assets/8f9aa53d-0931-47d8-9525-38e6dfa65eca)
+
+
+## Grafana Dashboard Design
+
+**Grafana Dashboard Data collection:**
+> Click Home button and follow the process:
+
+![image](https://github.com/user-attachments/assets/c1e02a7a-a3c4-41b5-b565-e239a4cd74cb)
+
+- **Search option type Prometheus and click that**
+- **You will find “Connection”**
+    - **Prometheus server URL: http://prometheus Server IP:9090**
+
+**Then Click save & Test**
+
+**Create a New Dashboard**
+- Navigate to Dashboards:
+  - Click on the "+" icon on the left-hand menu and select Dashboard.
+- Add a Panel:
+  - Click on Add new panel.
+- Select Prometheus as the Data Source:
+  - In the query editor, ensure Prometheus is selected as the data source.
+- Visualize the Data:
+  - Choose a visualization type (e.g., Graph, Gauge, Table) from the options above the query editor.
+- Save the Panel:
+  - Provide a title for the panel and save it.
+ 
+**You may customize your dashboard as your requirement.**
